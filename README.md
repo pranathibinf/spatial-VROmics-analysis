@@ -53,7 +53,7 @@ drive.mount('/content/drive')
 **Google Colab (recommended):** Open workflow.ipynb in Google Colab. Click Runtime → Run all to execute all cells
 **Local Jupyter Notebook:** 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/pranathibinf/spatial-VROmics-analysis.git
 cd spatial-VROmics-analysis/workflow
 jupyter notebook workflow.ipynb
 ```
