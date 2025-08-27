@@ -1,0 +1,26 @@
+task: You have been given processed Visium Human Lymph Node V1 spatial transcriptomics
+  data (filtered feature-barcode HDF5 matrix from 10x Genomics). Using the provided
+  workflow notebook and outputs, answer the following questions related to preprocessing,
+  clustering, and visualization.
+questions:
+- id: q1
+  stage: quality_control
+  text: How many cells remain after filtering cells with fewer than 200 genes?
+  answer_type: integer_exact
+- id: q2
+  stage: normalization
+  text: How many highly variable genes (HVGs) were selected during preprocessing?
+  answer_type: integer_exact
+- id: q3
+  stage: dimensionality_reduction
+  text: What percentage of variance is explained by the first principal component
+    (PC1)?
+  answer_type: float_tolerance
+- id: q4
+  stage: clustering
+  text: How many Leiden clusters were identified at resolution 0.5?
+  answer_type: integer_exact
+- id: q5
+  stage: markers
+  text: List the top 5 marker genes for cluster 0 by Wilcoxon ranking.
+  answer_type: ordered_list
