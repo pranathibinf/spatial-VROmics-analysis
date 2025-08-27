@@ -1,0 +1,17 @@
+paper_title: "Automated integration of multi-slice spatial transcriptomics data in 2D and 3D using VR-Omics"
+doi: "10.1186/s13059-025-03630-6"
+data_source: "V1_Human_Lymph_Node_filtered_feature_bc_matrix.h5 (10x Genomics, Visium dataset)"
+domain: "spatial_transcriptomics"
+ref_genome: "GRCh38 (Ensembl / 10x Genomics reference)"
+tools:
+  - Python 3.12
+    - scanpy 1.11.4
+    - anndata 0.12.2
+    - seaborn 0.13.2
+    - matplotlib 3.10.0
+    - h5py 3.11.0
+    - PyYAML 6.0
+  - R 4.3.x (optional)
+    - SeuratDisk 0.0.0.9020 (from GitHub)
+estimated_runtime_minutes: 15
+estimated_time_for_human: 25
